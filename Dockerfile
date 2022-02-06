@@ -1,9 +1,9 @@
-FROM ruby:3.1.0
+FROM ruby:2.7.2
 
 WORKDIR /app
 
 VOLUME /app
 
-ENTRYPOINT /app/scripts/deploy-production.sh
+# ENTRYPOINT /app/scripts/deploy-production.sh
 
 EXPOSE 80
