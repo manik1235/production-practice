@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 echo "DEPLOYING TO PRODUCTION!"
 
-bundle install
+rails s --binding=0.0.0.0 --port=80

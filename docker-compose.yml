@@ -4,6 +4,8 @@ services:
     build: .
     volumes:
       - './:/app'
+    environment:
+      - RAILS_ENV=PRODUCTION
   web:
     image: nginx:1.21.6
     ports:
